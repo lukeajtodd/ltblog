@@ -1,26 +1,104 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik");
+@import url("https://fonts.googleapis.com/css?family=Arsenal|Bevan|Bungee+Shade|Fugaz+One");
 .title {
-  padding-bottom: 110px;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
   border-bottom: dashed 3px #000;
   position: relative; }
+
+.logo-box {
+  right: 3.5rem;
+  position: absolute; }
+
+.logo {
+  width: 3rem; }
 
 .logo-container {
   position: absolute; }
 
-.logo-container:nth-child(4) {
-  padding-top: 20px; }
+@-webkit-keyframes flow1 {
+  0% {
+    padding-top: 5px; }
+  50% {
+    padding-top: 6px; }
+  110% {
+    padding-top: 5px; } }
 
-.logo-container:nth-child(3) {
-  padding-top: 15px;
-  padding-left: 5px; }
-
-.logo-container:nth-child(2) {
-  padding-top: 10px;
-  padding-left: 10px; }
+@keyframes flow1 {
+  0% {
+    padding-top: 5px; }
+  50% {
+    padding-top: 6px; }
+  110% {
+    padding-top: 5px; } }
 
 .logo-container:nth-child(1) {
   padding-top: 5px;
-  padding-left: 15px; }
+  padding-left: 11px;
+  will-change: padding-top; }
+
+@-webkit-keyframes flow2 {
+  0% {
+    padding-top: 10px; }
+  50% {
+    padding-top: 12px; }
+  110% {
+    padding-top: 10px; } }
+
+@keyframes flow2 {
+  0% {
+    padding-top: 10px; }
+  50% {
+    padding-top: 12px; }
+  110% {
+    padding-top: 10px; } }
+
+.logo-container:nth-child(2) {
+  padding-top: 10px;
+  padding-left: 22px;
+  will-change: padding-top; }
+
+@-webkit-keyframes flow3 {
+  0% {
+    padding-top: 15px; }
+  50% {
+    padding-top: 18px; }
+  110% {
+    padding-top: 15px; } }
+
+@keyframes flow3 {
+  0% {
+    padding-top: 15px; }
+  50% {
+    padding-top: 18px; }
+  110% {
+    padding-top: 15px; } }
+
+.logo-container:nth-child(3) {
+  padding-top: 15px;
+  padding-left: 33px;
+  will-change: padding-top; }
+
+@-webkit-keyframes flow4 {
+  0% {
+    padding-top: 20px; }
+  50% {
+    padding-top: 24px; }
+  110% {
+    padding-top: 20px; } }
+
+@keyframes flow4 {
+  0% {
+    padding-top: 20px; }
+  50% {
+    padding-top: 24px; }
+  110% {
+    padding-top: 20px; } }
+
+.logo-container:nth-child(4) {
+  padding-top: 20px;
+  padding-left: 44px;
+  will-change: padding-top; }
 
 .nav {
   position: absolute;
@@ -33,32 +111,35 @@
     display: inline-block; }
     .nav__item a {
       color: #000;
-      padding: 0 10px; }
+      padding: 0 10px;
+      display: inline-block;
+      background: red; }
       .nav__item a object {
+        margin-bottom: -0.5rem;
         width: 1.5rem; }
-      .nav__item a:hover {
-        background: #000;
-        color: #fff; }
 
-.work {
+.article {
   position: relative;
   margin: 5rem 0; }
-  .work__title {
-    font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
-    margin: 0; }
-  .work__description {
-    font-size: 1.2rem;
+  .article__title, .article__description {
+    margin: 0;
+    width: 60%;
+    margin-bottom: 3rem; }
+  .article__title {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 3.2rem; }
+  .article__description {
+    font-size: 1.3rem;
     font-weight: 600;
-    line-height: 1.8rem; }
-  .work__image {
+    line-height: 1.9rem;
+    word-spacing: normal;
+    width: 100%; }
+  .article__image {
     border: 3px solid #000;
     width: 140%;
     margin-left: -20%;
-    display: inline-block; }
-  .work__title, .work__description {
-    width: 60%;
-    margin-bottom: 30px; }
+    display: inline-block;
+    margin-bottom: 3rem; }
 
 *, *::after, *::before {
   box-sizing: border-box; }
@@ -67,18 +148,18 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: 'Eczar', sans-serif;
+  font-family: 'Arsenal', sans-serif;
   background: #efefef; }
 
 .container {
   position: relative;
   margin: 30px auto;
-  max-width: 600px;
+  max-width: 700px;
   width: 100%; }
 
 .separator {
   border-bottom: dashed 3px #000;
-  margin: 30px auto;
+  margin: 0 auto 30px auto;
   width: 33%; }
 
 .hl {

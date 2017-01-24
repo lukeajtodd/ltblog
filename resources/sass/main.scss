@@ -2,12 +2,13 @@ $main_color: rgba(150, 6, 179, 1);
 $highlight_color: #705499;
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond|Eczar|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Bevan|Bungee+Shade|Fugaz+One');
 
 // @import '_contact-bar';
 @import '_header';
 // @import '_article';
 @import '_nav';
-@import '_work';
+@import '_article';
 // @import '_about';
 // @import '_call_button';
 // @import '_email_button';
@@ -21,20 +22,20 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    font-family: 'Eczar', sans-serif;
+    font-family: 'Arsenal', sans-serif;
     background: #efefef;
 }
 
 .container {
     position: relative;
     margin: 30px auto;
-    max-width: 600px;
+    max-width: 700px;
     width: 100%;
 }
 
 .separator {
   border-bottom: dashed 3px #000;
-  margin: 30px auto;
+  margin: 0 auto 30px auto;
   width: 33%;
 }
 
