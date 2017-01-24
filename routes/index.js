@@ -7,7 +7,7 @@ const articles = {
       url: '#',
       description: `Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
       content: 'Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      screengrab: 'https://www.fillmurray.com/700/240',
+      screengrab: 'https://dummyimage.com/2800x960/000/fff&text=+',
       mobile_screengrab: '#'
   },
   i2: {
@@ -15,7 +15,7 @@ const articles = {
       url: '#',
       description: `Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`,
       content: 'Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      screengrab: 'https://www.fillmurray.com/700/240',
+      screengrab: 'https://dummyimage.com/2800x960/000/fff&text=+',
       mobile_screengrab: '#'
   }
 }
@@ -41,7 +41,6 @@ router.get('/', function(req, res, next) {
 
 router.get('/:article_id', function(req, res, next) {
   let article = articles[req.params.article_id];
-  console.log(article.title);
   res.render('article', {
     article,
     colours

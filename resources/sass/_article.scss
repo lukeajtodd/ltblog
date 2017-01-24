@@ -40,6 +40,7 @@
     &__image {
       position: relative;
       width: 100vw;
+      height: 480px;
       margin-left: -(100vw - $max-width) / 2;
       background: black;
       border: none;
@@ -47,11 +48,12 @@
       border-bottom: 3px solid #000;
     }
     &__title {
+      background: #fff;
       position: absolute;
       top: 1rem;
-      left: (-(100vw - $max-width) / 2) + 2vw;
+      left: 1rem;
+      padding: 20px;
       z-index: 5;
-      color: #fff;
       &:hover {
         transform: initial;
       }
