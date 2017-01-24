@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .article__page
+    .article
+      img.article__image(src=`${article.screengrab}`)
+      h1.article__title= article.title
+      p.article__content= article.content
