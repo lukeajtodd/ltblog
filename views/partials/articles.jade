@@ -1,0 +1,6 @@
+- for item in articles
+  .article
+    h2.article__title= item.title
+    p.article__description= item.description
+    img.article__image(src="#{item.screengrab}") 
+    .separator

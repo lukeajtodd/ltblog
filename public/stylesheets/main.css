@@ -7,11 +7,13 @@
   position: relative; }
 
 .logo-box {
-  right: 3.5rem;
+  right: 4rem;
   position: absolute; }
+  .logo-box:hover .logo path {
+    fill: #000; }
 
 .logo {
-  width: 3rem; }
+  width: 3.5rem; }
 
 .logo-container {
   position: absolute; }
